@@ -8,12 +8,12 @@
     Команда для Windows:
         1- python -m venv venv
         2- venv\Scripts\activate
-        3- pip install -r requirement.txt
+        3- pip install -r requirements.txt
 
     Команда для Unix:
         1- python3 -m venv venv
         2- source venv/bin/activate 
-        3- pip install -r requirement.txt
+        3- pip install -r requirements.txt
 
 ### 2. Для запуска celery:
         1- celery -A config worker --loglevel=info --pool=eventlet
