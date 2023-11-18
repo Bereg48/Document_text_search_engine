@@ -15,16 +15,9 @@
         2- source venv/bin/activate 
         3- pip install -r requirements.txt
 
-### 2. Для запуска celery:
-        1- celery -A config worker --loglevel=info --pool=eventlet
-        2- celery -A config beat -l info -s django
+### 2. Для запуска приложения: 
+    Команда для Windows:
+    - python manage.py runserver
 
-### 3. Для создания createsuperuser:
-        1- python manage.py csu
-
-
-### 4. Для работы с переменными окружениями необходимо заполнить файл
-    - .env
-
-### 5. Для отправки рассылки из командной строки:
-        1- python manage.py sendmessage N, где N - это PK рассылки (PK рассылки смотри в админке)
+    Команда для Unix:
+    - python3 manage.py runserver
